@@ -1,4 +1,4 @@
-expotr function handleMessageNotif(data) {
+export function handleMessageNotif(data) {
   const { message, nickname } = data;
-  Console.log(`${nickname} ${message}`);
+  console.log(`${nickname}: ${message}`);
 }
