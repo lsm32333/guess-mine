@@ -20,7 +20,7 @@ const io = socketIO.listen(server);
 
 io.on("connection", socket => {
   socket.on("newMessage", ({ message }) => {
-    socket.broadcast.emit("messageNotif", { 
+    socket.broadcast.emit("messageNotif", {
       message,
       nickname: socket.nickname || "Anon"
     });
